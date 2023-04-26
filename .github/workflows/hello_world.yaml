@@ -24,6 +24,12 @@ jobs:
       - name: goodbye world
         run: pwd
         shell: bash
+  
+  testing-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Python test file Running
+        run: python3 scripts/test.py
 
 
 

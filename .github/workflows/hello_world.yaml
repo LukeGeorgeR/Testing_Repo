@@ -22,7 +22,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: goodbye world
-        run: echo "GoodBye World"
+        run: pwd
         shell: bash
+
+
+
 
     

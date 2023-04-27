@@ -9,11 +9,6 @@ on:
       - main
   workflow_dispatch:
 
-defaults:
-  run:
-    shell: bash
-    working-directory: ./scripts
-
 jobs:
   test_job:
     runs-on: ubuntu-latest

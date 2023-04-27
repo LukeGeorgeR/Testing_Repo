@@ -28,6 +28,9 @@ jobs:
   testing-script:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        
       - name: Python test file Running
         run: python3 hello.py
 

@@ -19,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        name: 'Check Out Version'
+
       - name: hello world
         run: echo "Hello World Testing 1"
         shell: bash
@@ -32,6 +34,10 @@ jobs:
   
   testing-script:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: scripts
     steps:
       - name: Setup Python
         uses: actions/setup-python@v4

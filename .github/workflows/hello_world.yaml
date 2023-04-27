@@ -33,6 +33,9 @@ jobs:
       run:
         shell: bash
     steps:
+
+      - uses: actions/checkout@v2
+        name: 'Checkout Repo'
       - name: Setup Python
         uses: actions/setup-python@v4
         with:
